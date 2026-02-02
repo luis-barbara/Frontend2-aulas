@@ -4,8 +4,7 @@
   "features": {
     "ghcr.io/devcontainers/features/node:1": {
       "version": "20"
-    },
-    "ghcr.io/devcontainers/features/github-cli:1": {}
+    }
   },
   "forwardPorts": [3000],
   "postCreateCommand": "npm install -g typescript tsx ts-node",
@@ -15,7 +14,8 @@
         "dbaeumer.vscode-eslint",
         "esbenp.prettier-vscode",
         "bradlc.vscode-tailwindcss",
-        "dsznajder.es7-react-js-snippets"
+        "dsznajder.es7-react-js-snippets",
+        "Prisma.prisma"
       ],
       "settings": {
         "editor.formatOnSave": true,
