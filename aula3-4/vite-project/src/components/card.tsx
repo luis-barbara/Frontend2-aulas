@@ -1,9 +1,11 @@
 
 
 const cardStyle = {
-    padding: '12px 16px',
-    backgroundColor: "white",
-    borderRadius: '10px',
+  padding: '20px',
+  backgroundColor: "white",
+  borderRadius: '10px',
+  minWidth: '300px',  
+  boxShadow: '0 2px 8px rgba(0,0,0,0.1)',  
 };
 
 const tittleStyle = {
@@ -18,12 +20,7 @@ const descriptionStyle = {
     marginBottom: '8px',
 };
 
-const buttonStyle = {
-    width: '5px',
-    height: '5px',
-    borderRadius: '5px',
-    cursor: 'pointer',
-};
+;
 
 const buttonClick = () => {
     alert("Button clicked!");
@@ -42,7 +39,7 @@ const Card = ({
         <div style={cardStyle}>
             <h2 style={tittleStyle}>{title}</h2>
             <div style={descriptionStyle}>{description}</div>
-            <button style={buttonStyle} onClick={buttonClick}>{button}</button>
+            <button onClick={buttonClick}>{button}</button>
         </div>
     )
         
