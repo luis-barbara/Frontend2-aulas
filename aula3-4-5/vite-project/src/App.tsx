@@ -1,6 +1,8 @@
 import './App.css'
 import ProfileCard from "./components/profilecard"
 import Card from "./components/card"
+import Clock from './components/clock';
+import Contador from "./components/ex-contador"
 
 
 const styles = {
@@ -25,6 +27,11 @@ function App() {
         description="This is a description for the sample card."
         button="Click Me"
       />
+      <Clock 
+        timezone="Europe/Lisbon"
+      />
+      <Contador />
+
     </div>
   );
 }
