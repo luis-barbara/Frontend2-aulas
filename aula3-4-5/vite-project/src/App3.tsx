@@ -4,6 +4,7 @@ import { Home, About} from "./pages/pages";
 import Post from "./pages/blog/Post";
 import Navbar from "./components/layout/Navbar";
 import Search from "./pages/search/Search";
+import Dashboard from "./pages/dashboard/Dashboard";
 
 
 function App3() {
@@ -15,6 +16,7 @@ function App3() {
         <Route path="/about" element={<About />} />
         <Route path="/post/:id" element={<Post />} />
         <Route path="/search" element={<Search />} />
+        <Route path="/dashboard" element={<Dashboard />} />
       </Routes>
     </>
   );
