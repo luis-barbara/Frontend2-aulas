@@ -4,6 +4,8 @@ import Navbar from "@/components/layout/Navbar";
 import "./globals.css";
 import ComponentesFuncionais from "@/components/layout/ComponentesFuncionais";
 import ReRenderizacao from "@/components/layout/ReRenderizacao";
+import UseRef from "@/components/layout/UseRef";
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -33,6 +35,7 @@ export default function RootLayout({
         <Navbar />
         <ComponentesFuncionais />
         <ReRenderizacao />
+        <UseRef />
         {children}
       </body>
     </html>
