@@ -5,7 +5,7 @@ import "./globals.css";
 import ComponentesFuncionais from "@/components/layout/ComponentesFuncionais";
 import ReRenderizacao from "@/components/layout/ReRenderizacao";
 import UseRef from "@/components/layout/UseRef";
-
+import BotaoTema from "@/components/layout/BotaoTema";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -36,6 +36,7 @@ export default function RootLayout({
         <ComponentesFuncionais />
         <ReRenderizacao />
         <UseRef />
+        <BotaoTema />
         {children}
       </body>
     </html>
