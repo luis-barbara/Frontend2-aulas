@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import Navbar from "@/components/layout/Navbar";
 import "./globals.css";
 import { TemaProvider } from "@/components/layout/ContextAPI";
+import { StoreProvider } from "@/redux/StoreProvider";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -28,11 +29,13 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      > 
+      >
+      <StoreProvider> 
         <TemaProvider>
           <Navbar />
           {children}
         </TemaProvider>
+      </StoreProvider>
       </body>
     </html>
   );
